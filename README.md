@@ -1,2 +1,2 @@
 # Rock Paper Scissors Odin Project
-Test 5
+Test 6
