@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="TitleText">RRock Paper Scissors</div>
+        <div class="TitleText"> RRock Paper Scissors</div>
     </header>
     <main>
         <div class="choose">Choose your weapon</div>
@@ -16,23 +16,33 @@
         <div class="PickCardContainer">
             <div class="CardContainer">
                 <div class="Card">
-                    <div class="PlayerIcon">?</div>
+                    <div class="PlayerIcon">✊</div>
                     <div class="PlayerCount">Player: 0</div>
                 </div>
                 <div class="Card">
-                    <div class="BotIcon">?</div>
+                    <div class="BotIcon">✊</div>
                     <div class="BotCount">Computer: 0</div>
                 </div>
             </div>
         </div>
         <div class="PickWeapon">
-            <div class="Rock">x</div>
-            <div class="Paper">x</div>
-            <div class="Scissors">x</div>
+            <button class="Rock" onclick="addPlayerScore()">✊</button>
+            <button class="Paper" onclick="addBotScore()">✋</button>
+            <button class="Scissors" onclick="addBotScore()">✌️</button>
+        </div> 
+        <div class="FinishScreen">
+            <div class="FinishScreenTextPick">
+                <div class="FinishText">Would you like to play another game?</div>
+                <div class="FinishPick">
+                    <div class="FinishPickYES">YES</div>
+                    <div class="FinishPickNO">NO</div>
+                </div>
+           </div>
         </div>
     </main>
+    <script src="index.js"></script>
     <footer>
-        <div class="sign">XXXXXXXXXXXXX</div>
+        <div class="sign">Copyright © 2024 IMMGabriel</div>
     </footer>
 </body>
 </html>
