@@ -1,10 +1,10 @@
-/* *{
+*{
     box-sizing: border-box;
-    border: 2px red dotted;
+    /* border: 1px red dotted; */
     padding: 0;
     margin: 0;
     
-} */
+}
 html, body {
     height: 100%;
     margin: 0;
@@ -19,6 +19,7 @@ header{
     align-items: center;
     padding: 30px;
     background-color: rgb(110, 0, 0);
+    border-bottom: 3px red solid;
 }
 
 .TitleText{
@@ -28,16 +29,13 @@ header{
     color: rgb(0, 0, 0);
     text-align: center;
 }
-main{
-    padding-top: 30px;
-}
+
 .choose{
     height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size:4vh ;
-    border-top: 3px red solid;
 }
 .first{
     padding: 5px;
@@ -185,6 +183,7 @@ main{
     align-items: center;
     justify-content: center;
     background-color: green;
+    cursor: pointer;
 }
 .FinishPickNO{
     background-color: red;

@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="TitleText"> RRock Paper Scissors</div>
+        <div class="TitleText"> Rock Paper Scissors</div>
     </header>
     <main>
         <div class="choose">Choose your weapon</div>
@@ -26,21 +26,21 @@
             </div>
         </div>
         <div class="PickWeapon">
-            <button class="Rock" onclick="addPlayerScore()">✊</button>
-            <button class="Paper" onclick="addBotScore()">✋</button>
-            <button class="Scissors" onclick="addBotScore()">✌️</button>
+            <button class="Rock" onclick="oneRound('ROCK')">✊</button>
+            <button class="Paper" onclick="oneRound('PAPER')">✋</button>
+            <button class="Scissors" onclick="oneRound('SCISSORS')">✌️</button>
         </div> 
         <div class="FinishScreen">
             <div class="FinishScreenTextPick">
                 <div class="FinishText">Would you like to play another game?</div>
                 <div class="FinishPick">
-                    <div class="FinishPickYES">YES</div>
-                    <div class="FinishPickNO">NO</div>
+                    <div class="FinishPickYES" onclick="newGame()">YES</div>
+                    <div class="FinishPickNO" onclick="newGame()">NO</div>
                 </div>
            </div>
         </div>
     </main>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <footer>
         <div class="sign">Copyright © 2024 IMMGabriel</div>
     </footer>
