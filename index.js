@@ -9,6 +9,8 @@ function addPlayerScore(){
     console.log(`PlayerScore: ${playerScore}`);
     if(playerScore === 5){
       document.querySelector(".FinishScreen").style.display = 'flex';
+      document.querySelector(".FinishText").innerHTML = "You won, Would you like to play another game?";
+      document.querySelector(".FinishText").style.color = "green"
       }
     }
 function addBotScore(){
@@ -17,6 +19,8 @@ function addBotScore(){
     console.log(`BotScore: ${botScore}`);
     if(botScore === 5){
       document.querySelector(".FinishScreen").style.display = 'flex';
+      document.querySelector(".FinishText").innerHTML = "You lose, Would you like to play another game?";
+      document.querySelector(".FinishText").style.color = "red"
       }
     }
 
@@ -53,6 +57,7 @@ function oneRound(x){
   console.log(`Bot pick = ${botbotPick}`)
   result = (`${playerPick}`+ " - " + `${botbotPick}`)
   console.log(result)
+  document.querySelector(".choose").innerHTML = `${result}`;
   if (playerPick === botbotPick) {
     console.log("tie");
     
@@ -89,6 +94,7 @@ function newGame(){
   document.querySelector(".FinishScreen").style.display = 'none';
   document.querySelector('.PlayerCount').innerText = `Player: 0`;
   document.querySelector('.BotCount').innerHTML = `Computer: 0`;
+  document.querySelector(".choose").innerHTML = `Choose your weapon`;
   botScore = 0
   playerScore = 0
 }

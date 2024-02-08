@@ -200,3 +200,7 @@ footer{
     justify-self: center;
 
 }
+
+.FinishPickYES:hover, .FinishPickNO:hover{
+    opacity: 50%;
+}
